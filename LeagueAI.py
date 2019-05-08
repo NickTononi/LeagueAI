@@ -316,8 +316,7 @@ def estimate_policy_gradient_FD():
 
 def perturbate_policy(delta_scale=1.0):
     factor = np.random.random(4)*delta_scale
-    delta_theta_i = f
-    actor * np.array(policy.theta).reshape(4)
+    delta_theta_i = factor * np.array(policy.theta).reshape(4)
     return delta_theta_i.tolist()
 
 # Main Routine
